@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Practicing By CSS3</title>
+</head>
+
+<body>
+
+    <style>
+        .field {
+            width: 90%;
+            height: 400px;
+            background-color: cyan;
+            margin: auto;
+        }
+
+        .ball {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: rgb(115, 7, 7);
+            animation: bounching 2s ease-in-out .5s infinite alternate;
+            position: relative;
+
+        }
+
+
+        @keyframes bounching {
+            0% {
+                background-color: yellowgreen;
+                left: 0;
+                top: 0;
+                /* transform: scale(0.5); */
+            }
+
+            25% {
+                background-color: rgb(205, 120, 50);
+                left: 22.5%;
+                top: 300px;
+            }
+
+            50% {
+                background-color: rgb(50, 115, 205);
+                top: 0;
+                left: 45%;
+            }
+
+            75% {
+                background-color: cyan black;
+                top: 300px;
+                left: 67.5%;
+            }
+
+            100% {
+                background-color: red;
+                top: 0;
+                left: 90%;
+            }
+        }
+    </style>
+
+    <div class="field">
+        <div class="ball">
+
+        </div>
+    </div>
+
+</body>
+
+</html>
